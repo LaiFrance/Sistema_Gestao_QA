@@ -1,0 +1,26 @@
+{
+  "name": "sistema-de-lembretes",
+  "version": "1.0.0",
+  "description": "gerenciamento de lembretes",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index",
+    "dev": "nodemon index",
+    "test": "jest --coverage"
+  },
+  "author": "Laise Farias France",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "bootstrap": "^3.4.1",
+    "ejs": "^3.1.8",
+    "express": "^4.18.2",
+    "js-datepicker": "^5.18.2",
+    "mongoose": "^6.10.0",
+    "nodemon": "^2.0.20"
+  },
+  "devDependencies": {
+    "jest": "^29.3.1",
+    "supertest": "^6.3.3"
+  }
+}

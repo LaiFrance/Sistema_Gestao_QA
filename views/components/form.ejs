@@ -1,0 +1,58 @@
+<h1><%= titleForm %></h1>
+<form action="/<%= action %>" method="post">
+  <table>
+      <tr>
+          <th>Erro de IIS/ Página</th>
+          <th>Cliente/Usuário</th>
+          <th>Data</th>
+          <th>Hora</th>
+          <th>ASP Aplicado em Produção</th>
+          <th>Pacote Aplicado/ TICKET</th>
+          <th>Comentários</th>
+          <th>QA</th>
+          <th>Status</th>
+      </tr>
+      <tr>
+          <td>
+              <input type="text" name="task" id="task" placeholder="Insira uma tarefa" value="<%= value %>">
+          </td>
+          <td>
+                <input type="text" name="descricao" id="descricao" placeholder="Insira uma descrição" value="<%= value %>" rows="3" cols="20">
+        </td>
+          <td>
+                <input type="date" name="data" id="data" placeholder="Insira uma data" value="<%= value %>">
+        </td>
+          
+          <td>
+              <input type="time" name="hora" id="hora" placeholder="Insira uma hora" value="<%= value %>">
+          </td>
+          <td>
+              <select name="categoria" id="categoria" placeholder="Insira uma categoria">
+                <option value="0">Selecione um status</option>
+                  <option style="background-color: rgb(0, 225, 64);" value="SIM">Sim</option>
+                  <option style="background-color: rgb(179, 27, 7);" value="NÃO">Não</option>
+          </td>
+          <td>
+              <input type="number" name="prioridade" id="prioridade" placeholder="Insira uma prioridade" value="<%= value %>">
+          </td>
+          <td>
+              <input type="text" name="comentarios" id="comentarios" placeholder="Insira comentários" value="<%= value %>" rows="3" cols="20">
+          </td>
+          <td>
+              <input type="text" name="responsavel" id="responsavel" placeholder="Insira um responsável" value="<%= value %>">
+          </td>
+          
+          <td>
+              <select name="status" id="status">
+                <option value="0">Selecione um status</option>
+                  <option style="background-color: red;" value="A Fazer">A Fazer</option>
+                  <option style="background-color: aqua;" value="Em Andamento">Em andamento</option>
+                  <option style="background-color: green;" value="Finalizada">Finalizada</option>
+              </select>
+            </tr>
+        </table>
+    </td>
+    
+        <button id="<%= idBtn %>" type="submit"><%= nameBtn %></button>
+    </td>
+</form>
